@@ -61,7 +61,8 @@ header{
     display:none;
     margin: auto 0;
     width: 100%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .mobile img {
@@ -116,6 +117,7 @@ header{
 
 .content p {
   font-size: 24px;
+  font-size: 24px;
   font-size: 1.5rem;
   font-weight:500;
   line-height: 2vw;
@@ -130,10 +132,14 @@ header{
   font-family:'Playfair Display';
   margin-bottom: 32px;
  background-color: gray;
+  -webkit-transition-property: background-color;
   transition-property: background-color;
-  transition-duration: 1s;
-  transition-delay: 0s;
-  transition-timing-function: ease-in;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
 
@@ -158,7 +164,8 @@ header{
 }
 
 .second-banner .banner-left {
-  flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .second-banner-image img {
@@ -167,6 +174,7 @@ header{
 }
 .contents h2 {
   font-weight: 800;
+  font-size: 28.8px;
   font-size: 1.8rem;
   margin-top: 32px;
 
@@ -188,15 +196,24 @@ cite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: inline-block;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-basis: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .sidecontents {
   display:-webkit-box;
   display:-ms-flexbox;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 16px;
   width: 40%;
   height: auto;
@@ -228,10 +245,12 @@ cite {
 .content-detail h3 {
   font-weight: 600;
   font-size: 24px;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
 .content-detail p {
+  font-size: 22.4px;
   font-size: 22.4px;
   font-size: 1.4rem;
   line-height: 1.8;
@@ -252,17 +271,30 @@ cite {
 
 .start-learn h3 {
   font-weight: 800;
+  font-size: 28.8px;
   font-size: 1.8rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 32px;
 }
 
 .start-learning-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 72px;
 
 }
@@ -272,10 +304,17 @@ cite {
 }
 
 .start-learning {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  flex-basis: 31%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
 }
 
 .bannerside img {
@@ -286,20 +325,30 @@ cite {
 
 
 .thes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 
 }
 
 
 .thes-div {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     margin: 24px 24px 24px 24px;
 }
 .thesisheader h3 {
   font-weight: 800;
+  font-size: 28.8px;
   font-size: 1.8rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
   text-align: center;
   margin-top: 32px;
    margin-bottom: 32px;
@@ -309,7 +358,8 @@ cite {
 .thesisvideo  {
 
   padding: 0 24px 24px 0;
-  flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 
 .thesisvideo video {
@@ -332,9 +382,15 @@ cite {
 
 
 .thesis-sidebar {
+display:-webkit-box;
+display:-ms-flexbox;
 display:flex;
-flex-direction: column;
-flex-basis: 50%;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
 
 
 }
@@ -349,7 +405,9 @@ flex-basis: 50%;
     padding-left: 16px;
     margin: auto 0;
    width:50%;
-   justify-content: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
     float: right;
 }
 
@@ -383,7 +441,9 @@ color: grey;
 
 .footer-links span {
     color:grey;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .mobile-f {
@@ -396,6 +456,8 @@ color: grey;
 @media only screen and (max-width: 679px) {
 /*header responses*/
     .mobile {
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
     }
    .desktop {
@@ -406,7 +468,10 @@ color: grey;
        display: none;
    }
  .first-banner {
-   flex-direction: column;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
  ;
      padding: 0;
  }
@@ -435,13 +500,18 @@ color: grey;
  .content button {
      margin-bottom: 32px;
 	background-color: gray;
+     -webkit-transition-property: background-color;
      transition-property: background-color;
-     transition-duration: 1s;
-     transition-delay: 0s;
-     transition-timing-function: ease-in;
+     -webkit-transition-duration: 1s;
+             transition-duration: 1s;
+     -webkit-transition-delay: 0s;
+             transition-delay: 0s;
+     -webkit-transition-timing-function: ease-in;
+             transition-timing-function: ease-in;
  }
   .content button:hover {
       background-color: black;
+      -webkit-transition: ;
       transition:
   }
  .banner-left {
@@ -449,12 +519,18 @@ color: grey;
  }
   .sidecontents {
      width: 100%;
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: center;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
 
   }
 
   .sidecontents .mobile img  {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 16px;
   margin-right: 16px;
@@ -469,8 +545,13 @@ color: grey;
 }
 
 .coursesmobile h5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 5vw;
   	background-color: lightgray;
   	margin: 0 24px 8px 24px;
@@ -493,13 +574,17 @@ color: grey;
   .thes {
 
       height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
 
   }
 
  .thes-div  {
   width: 100%;
- flex-grow:1;
+ -webkit-box-flex:1;
+     -ms-flex-positive:1;
+         flex-grow:1;
 
  }
 
